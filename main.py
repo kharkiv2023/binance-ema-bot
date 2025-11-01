@@ -9,7 +9,7 @@ scheduler = AsyncIOScheduler()
 
 # --- Ключі (з Environment Variables на Render) ---
 API_KEY = os.getenv("API_KEY", "PQn5Spmh9pYoe2LNpvVhiAjV2DN0kSxlYaX2ki9TOXKS9pTZeDU8msVhBn2IE1Kr")
-API_SECRET = os.getenv("API_SECRET", "lm8WehzeRZ598K0VIu8Mpjo34nviWkka8GFh2C4v303Ud210Gw5ALnprZfwIVHck
+API_SECRET = os.getenv("API_SECRET", "lm8WehzeRZ598K0VIu8Mpjo34nviWkka8GFh2C4v303Ud210Gw5ALnprZfwIVHck")
 SYMBOLS = ['BTCUSDT', 'ETHUSDT', 'XRPUSDT', 'LTCUSDT', 'ADAUSDT', 'LINKUSDT', 'AVAXUSDT']
 TOKEN = os.getenv("TOKEN")
 CHAT_ID = os.getenv("CHAT_ID")
