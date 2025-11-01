@@ -91,16 +91,13 @@ async def startup():
     send_telegram('Бот EMA 20/50 (15m) запущений на Render!')
 
 # === Головна сторінка (щоб Render не "засинав") ===
+# === Головна сторінка (підтримує GET і HEAD) ===
 @app.get("/")
+@app.head("/")
 def home():
     return {
         "status": "Бот працює!",
         "pairs": SYMBOLS,
         "ema": f"{EMA_SHORT}/{EMA_LONG}",
         "interval": INTERVAL
-    }
-
-# Для локального тестування
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+            }
