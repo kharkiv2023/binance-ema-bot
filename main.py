@@ -16,7 +16,7 @@ CHAT_ID = os.getenv("CHAT_ID")
 
 # === Налаштування таймфреймів: EMA 20/50 на 15m і 1h ===
 TIMEFRAMES = {
-    "15m": {"interval": "15m", "ema_short": 20, "ema_long": 50, "check_every": 15},
+    "15m": {"interval": "1m", "ema_short": 2, "ema_long": 5, "check_every": 15},
     "1h":  {"interval": "1h",  "ema_short": 20, "ema_long": 50, "check_every": 60}
 }
 
